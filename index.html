@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คลิปสูตร All Cafe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff7e5f, #feb47b), url('your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            font-size: 36px;
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 640px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+        .video-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #feb47b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>คลิปสูตร All Cafe</h1>
+
+    <div class="video-container">
+        <!-- Menu 1 -->
+        <div>
+            <button onclick="toggleVideo(1)">1. banana fishing ปั่น</button>
+            <video id="video-1" controls autoplay muted>
+                <source src="banana fishing ปั่น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 2 -->
+        <div>
+            <button onclick="toggleVideo(2)">2. ivy banana plus ปั่น</button>
+            <video id="video-2" controls autoplay muted>
+                <source src="ivy banana plus ปั่น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 3 -->
+        <div>
+            <button onclick="toggleVideo(3)">3. โกโก้ลาวา double shock เย็น</button>
+            <video id="video-3" controls autoplay muted>
+                <source src="โกโก้ลาวา double shock เย็น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 4 -->
+        <div>
+            <button onclick="toggleVideo(4)">4. โกโก้ลาวานมสดเย็น</button>
+            <video id="video-4" controls autoplay muted>
+                <source src="โกโก้ลาวานมสดเย็น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 5 -->
+        <div>
+            <button onclick="toggleVideo(5)">5. โกโก้ลาวาสตอเบอรี่นมสดเย็น</button>
+            <video id="video-5" controls autoplay muted>
+                <source src="โกโก้ลาวาสตอเบอรี่นมสดเย็น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 6 -->
+        <div>
+            <button onclick="toggleVideo(6)">6. คอรน์ชีสปั่น</button>
+            <video id="video-6" controls autoplay muted>
+                <source src="คอรน์ชีสปั่น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 7 -->
+        <div>
+            <button onclick="toggleVideo(7)">7. คอรน์ชีสปั่น</button>
+            <video id="video-7" controls autoplay muted>
+                <source src="คอรน์ชีสปั่น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 8 -->
+        <div>
+            <button onclick="toggleVideo(8)">8. ปังเย็นดับเบิ้ลช็อก</button>
+            <video id="video-8" controls autoplay muted>
+                <source src="ปังเย็นดับเบิ้ลช็อก.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 9 -->
+        <div>
+            <button onclick="toggleVideo(9)">9. ปังเย็นนมชมพู</button>
+            <video id="video-9" controls autoplay muted>
+                <source src="ปังเย็นนมชมพู.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 10 -->
+        <div>
+            <button onclick="toggleVideo(10)">10. ปังเย็นนมสด brown sugar</button>
+            <video id="video-10" controls autoplay muted>
+                <source src="ปังเย็นนมสด brown sugar.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 11 -->
+        <div>
+            <button onclick="toggleVideo(11)">11. ปังเย็นนมสดภูเขาไฟ</button>
+            <video id="video-11" controls autoplay muted>
+                <source src="ปังเย็นนมสดภูเขาไฟ.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 12 -->
+        <div>
+            <button onclick="toggleVideo(12)">12. ปังเย็นน้ำแดง</button>
+            <video id="video-12" controls autoplay muted>
+                <source src="ปังเย็นน้ำแดง.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 13 -->
+        <div>
+            <button onclick="toggleVideo(13)">13. มิกซ์เบอรี่โยเกิร์ตสมูทตี้</button>
+            <video id="video-13" controls autoplay muted>
+                <source src="มิกซ์เบอรี่โยเกิร์ตสมูทตี้.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 14 -->
+        <div>
+            <button onclick="toggleVideo(14)">14. มิวกี้ซีเรียลปั่น</button>
+            <video id="video-14" controls autoplay muted>
+                <source src="มิวกี้ซีเรียลปั่น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 15 -->
+        <div>
+            <button onclick="toggleVideo(15)">15. เมนูคอรน์มิวลาเต้เย็น</button>
+            <video id="video-15" controls autoplay muted>
+                <source src="เมนูคอรน์มิวลาเต้เย็น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 16 -->
+        <div>
+            <button onclick="toggleVideo(16)">16. เมนูน้ำส้มเย็นและน้ำส้มปั่น</button>
+            <video id="video-16" controls autoplay muted>
+                <source src="เมนูน้ำส้มเย็นและน้ำส้มปั่น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 17 -->
+        <div>
+            <button onclick="toggleVideo(17)">17. เมนูน้ำเสารสเย็นและเสาวรสปั่น</button>
+            <video id="video-17" controls autoplay muted>
+                <source src="เมนูน้ำเสารสเย็นและเสาวรสปั่น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 18 -->
+        <div>
+            <button onclick="toggleVideo(18)">18. เมล่อนmilk shake ปั่น</button>
+            <video id="video-18" controls autoplay muted>
+                <source src="เมล่อนmilk shake ปั่น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 19 -->
+        <div>
+            <button onclick="toggleVideo(19)">19. สตอเบอรี่มิลค์เชคปั่น</button>
+            <video id="video-19" controls autoplay muted>
+                <source src="สตอเบอรี่มิลค์เชคปั่น.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 20 -->
+        <div>
+            <button onclick="toggleVideo(20)">20. สตอเบอรี่โยเกิร์ตสมูทตี้</button>
+            <video id="video-20" controls autoplay muted>
+                <source src="สตอเบอรี่โยเกิร์ตสมูทตี้.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 21 -->
+        <div>
+            <button onclick="toggleVideo(21)">21. อเมริกาโน่น้ำส้ม,น้ำลิ้นจี่,น้ำเสาวรส</button>
+            <video id="video-21" controls autoplay muted>
+                <source src="อเมริกาโน่น้ำส้ม,น้ำลิ้นจี่,น้ำเสาวรส.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Menu 22 -->
+        <div>
+            <button onclick="toggleVideo(22)">22. ไอวี่ฮัลโหลฟิชชี่ปั่น</button>
+            <video id="video-22" controls autoplay muted>
+                <source src="ไอวี่ฮัลโหลฟิชชี่ปั่น.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script>
+        function toggleVideo(id) {
+            var video = document.getElementById('video-' + id);
+            if (video.style.display === "none") {
+                video.style.display = "block";
+                video.play();
+            } else {
+                video.style.display = "none";
+                video.pause();
+            }
+        }
+    </script>
+</body>
+</html>
